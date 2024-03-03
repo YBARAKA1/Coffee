@@ -42,9 +42,26 @@ html::-webkit-scrollbar-thumb{
 body{
     background: var(--bg);
 }
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
 .btn {
     padding: 12.5px 30px;
     border: 0;
+    font-size: larger;
     border-radius: 100px;
     background:var(--main-color);
     color: #ffffff;
@@ -122,6 +139,9 @@ body{
     transform: scaleY(0);
     transform-origin: top;
 }
+.header .search-form.active{
+    transform: scaleY(1);
+}
 .header .search-form input{
     height: 100%;
     width: 100%;
@@ -184,6 +204,57 @@ body{
     color: var(--main-color);
     padding-bottom: .5rem;
 }
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/c10.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+   max-width: 60rem; 
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff; 
+ }
+ .home .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee; 
+ }
+ .about .row{
+    display: flex;
+    align-items: center;
+    background: var(--balck);
+    flex-wrap: wrap;
+ }
+ .about .row .image{
+    flex: 1 1 45rem;
+ }
+ .about .row .image img{
+    width: 100%;
+ }
+ .about .row .content{
+    margin-bottom: 40rem;
+    flex: 1 1 45rem;
+    padding: 2rem;
+
+ }
+ .about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+ }
+ .about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+ }
 
 
 
@@ -213,11 +284,14 @@ body{
         .header{
             padding: 1.5rem 2rem;
         }
+        section{
+            padding: 2rem ;
+        }
     }
 
 
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     
 #menu-btn{
         display: inline-block;
@@ -240,4 +314,31 @@ body{
         padding: .5rem;
         font-size: 2rem;
     }
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+        background: url(../images/c14.jpg) center no-repeat;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
 }
+
+@media (max-width: 450px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
+
+
