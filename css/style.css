@@ -167,7 +167,7 @@ section{
     right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
-    background: #fff;
+    background-image: linear-gradient(to bottom, #ffffff, #ececec, #d9d9d9, #c7c7c7, #b5b5b5, #a1a1a1, #8e8e8e, #7b7b7b, #626262, #4b4b4b, #343434, #1f1f1f);
     padding: 0 1.5rem;
 }
 .header .cart-items-container .cart-item{
@@ -255,10 +255,92 @@ section{
     padding: 1rem 0;
     line-height: 1.8;
  }
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+.menu .box-container .box img{
+    height: 10rem;
+}
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
 
+}
+.menu .box-container .box:hover{
+    background-image: radial-gradient(circle, #ffffff, #f8f8f8, #f0f0f0, #e9e9e9, #e2e2e2, #d5d5d5, #c8c8c8, #bbbbbb, #a6a6a6, #919191, #7d7d7d, #696969);
+}
+.menu .box-container .box:hover >*{
+    color:var(--balck);
+}
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.products .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border:var(--border);
+    color: #fff;
+    margin: .3rem;
 
+}
+.products .box-container .box .icons a:hover{
+    background: var(--main-color);
+}
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+.products .box-container .box .image img{
+    height: 25rem 0;
+}
 
-
+.products .box-container .box .content h3{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.products .box-container .box .content .stars{
+    color: #fff;
+    padding: 1.5rem;
+}
+.products .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+.products .box-container .box .content .price{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
 
 
 
@@ -300,7 +382,7 @@ section{
     .header .navbar{
         position: absolute;
         top: 100%; right: -100%;
-        background: #fff;
+        background-image: linear-gradient(to bottom, #ffffff, #ececec, #d9d9d9, #c7c7c7, #b5b5b5, #a1a1a1, #8e8e8e, #7b7b7b, #626262, #4b4b4b, #343434, #1f1f1f);
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
